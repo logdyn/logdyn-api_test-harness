@@ -15,7 +15,7 @@ public class WebsocketConfig implements ServerApplicationConfig
     @Override
     public Set<ServerEndpointConfig> getEndpointConfigs(final Set<Class<? extends Endpoint>> set)
     {
-        return Collections.singleton(new LoggingEndpointConfig("/LoggingEndpoint"));
+        return Collections.<ServerEndpointConfig>singleton(new LoggingEndpointConfig("/LoggingEndpoint"));
     }
 
     @Override
